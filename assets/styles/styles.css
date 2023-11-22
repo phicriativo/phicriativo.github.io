@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,400&display=swap');
+
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    background: linear-gradient(to right bottom, #333, #7e8792);
+}
+
+body {
+
+    background: linear-gradient(to right bottom, #333, #7e8792);
+    font-size: 16px;
+
+    position: absolute;
+    z-index: -99;
+
+}
+
+h1 {
+    font-weight: 900;
+    font-style: italic;
+
+}
+
+h2 {
+    font-weight: 400;
+    font-style: italic;
+}
+
+P {
+    font-weight: 400;
+}
+
+.section--size1 {
+    min-height: 100vh;
+    height: fit-content;
+    position: sticky;
+}
+
+.section--size2 {
+    min-height: 90vh;
+    position: sticky;
+
+}
+
+.nav--label {
+    height: calc(10vh - 2px);
+    box-sizing: border-box;
+    margin: 0 0 1px 0px;
+}
+
+.navbar {
+    z-index: 1000;
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    padding: 0 3rem 0 5rem;
+    border-radius: 0 0 10px 10px;
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    box-shadow: 1px 0 2px 1px #444;
+
+
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+
+}
+
+.navbar--logo {
+    position: absolute;
+    right: 82.5%;
+
+}
+
+.navbar--logo img {
+    max-width: 90px;
+}
+
+.navbar--links {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.nav--links {
+    display: flex;
+}
+
+.navbar--item {
+    padding: 0 0.75em;
+}
+
+.header--initialcontent {
+    position: sticky;
+    height: fit-content;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: calc(10vh + 1px) 0 2px 0;
+    margin: 0;
+}
+
+.header--content {
+    position: relative;
+    width: calc(50% - 1px);
+    height: calc(90vh - 2px);
+    box-sizing: border-box;
+    padding: 0 5vw;
+    border-radius: 10px;
+    margin: 0 0 0 1px;
+}
+
+.header--img {
+    position: relative;
+    width: calc(50% - 1px);
+    height: calc(90vh - 2px);
+    box-sizing: border-box;
+    padding: 0;
+    border-radius: 10px;
+    margin: 0 0 0 1px;
+    overflow: hidden;
+    background: no-repeat center url('../img/phi-lion.png');
+    background-size: cover;
+}
+
+.header--img img {
+    width: 100%;
+}
+
+.header--content-360 {
+
+    position: relative;
+    width: calc(50% - 1px);
+    height: calc(90vh - 2px);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0 0 0 1px;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.second--content {
+    margin: 1px 0 1px 2px;
+    z-index: -1;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.box--content {
+    position: relative;
+    width: calc(50% - 1px);
+    height: calc(90vh - 2px);
+    box-sizing: border-box;
+    padding: 3vh 3vw;
+    border-radius: 10px;
+    margin: 0 0 0 1px;
+}
+
+.botoes {
+    padding: 2em 0.5em;
+    text-align: center;
+}
+
+.btn {
+    padding: 1.25em;
+    margin: 0 0.5em;
+    border-radius: 10px;
+    background: #4A67D9;
+    border: 1px solid #5A4AD9;
+    color: white;
+}
+
+.header--text h1 {
+    font-size: 3.5em;
+    padding: 6rem 0 2rem 0;
+    text-align: center;
+    color: white;
+}
+
+
+.header--text p {
+    width: 90%;
+    padding-left: 5%;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+.header--text1 h1 {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    padding: 2rem 0 2rem 0;
+}
+
+.header--text1 h2 {
+    font-size: 2.5em;
+    color: white;
+    padding: 0 0 1rem 0.5rem;
+}
+
+.header--text1 p {
+    text-align: justify;
+    font-size: 1.5em;
+    color: white;
+    padding: 0.5rem 0.5rem;
+}
+
+.header--text2 h1 {
+    font-size: 2em;
+    color: white;
+    padding: 2rem 0 2rem 0;
+}
+
+.contact--links-off{
+    font-size: 1em;
+    color: white;
+    padding-left: 0.2em;
+}
+
+.ra-link {
+    display: none;
+    background: #4A67D9;
+
+    margin: 3rem 0 3rem auto;
+    border-radius: 5px;
+    padding: 0.7rem 0.5rem;
+    border: 1px solid #5A4AD9;
+    height: fit-content;
+    width: fit-content;
+}
+
+.ra-link a {
+    justify-content: center;
+}
+
+.box1--contact {
+    display: flex;
+    padding: 0.5em 0;
+}
+
+.contact--links {
+    color: white;
+    text-decoration: none;
+    padding: 0.25em 0 0 0.25em;
+}
+
+.box2--contact {
+    padding: 2em 0;
+}
+
+.box2--contact p {
+    color: white;
+    padding: 1em 0;
+}
+
+.parceiros--imagens {
+    height: 3em;
+    margin: 0.5em 0.5em 0 0em;
+}
+
+.parceiros--imagens1 {
+    height: 1.8em;
+    margin: 0.3em 0.4em 0.1em 0;
+}
+
+.apoio--header {
+    position: relative;
+    width: calc(40% - 1px);
+    height: calc(90vh - 2px);
+    box-sizing: border-box;
+    padding: 0 5vw;
+    border-radius: 10px;
+    margin: 0 0 0 1px;
+}
+
+.apoio--header1 {
+
+    font-size: 2em;
+    color: white;
+    padding: 1rem 0 1em 0;
+
+    position: relative;
+    width: calc(60% - 1px);
+    height: calc(90vh - 2px);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0 0 0 1px;
+
+}
+
+.apoio--header h1 {
+    margin: 0.4em 0;
+}
+
+.apoio{
+    background: white;
+    margin: 0.5em 0;
+    border-radius: 10px;
+    padding: 0.5em 0.2em;
+    width: 95%;
+    text-align: center;
+}
+
+@media (orientation: portrait) {
+    html {
+        overflow: auto;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .only-pc {
+        display: none;
+    }
+
+    .header--content,
+    .header--img,
+    .apoio--header,
+    .box--content,
+    .header--content-360 {
+        width: 100%;
+        height: 45vh;
+    }
+
+    .apoio--header1{
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 0;
+        padding-left: 0.4em;
+    }
+
+    .header--img {
+        margin-top: 4em;
+    }
+
+    .box--content {
+        padding: 0.5em;
+    }
+
+    .header--text1 h1 {
+        padding: 0 0.5em 0 0.5em;
+    }
+
+    .ra-link {
+        display: block;
+    }
+
+    .content-turn {
+        flex-direction: column-reverse;
+    }
+
+    .nav-div {
+        width: 45%;
+    }
+}
