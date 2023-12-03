@@ -8,7 +8,6 @@ html {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 
     background: linear-gradient(to right bottom, #333, #7e8792);
 }
@@ -209,7 +208,7 @@ P {
     font-size: 2em;
     text-align: center;
     color: white;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0 3rem 0;
 }
 
 .header--text1 h2 {
@@ -359,7 +358,7 @@ P {
     }
 
     .header--text1 h1 {
-        padding: 0 0.5em 0 0.5em;
+        padding: 0 0.5em 2rem 0.5em;
     }
 
     .ra-link {
