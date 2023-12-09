@@ -376,4 +376,8 @@ P {
     .nav-div {
         width: 45%;
     }
+
+    .header--content h1{
+        padding: 2rem;
+    }
 }
