@@ -230,6 +230,10 @@ P {
     padding: 2rem 0 2rem 0;
 }
 
+.text-360example p{
+    margin-top: 1rem;
+}
+
 .contact--links-off{
     font-size: 1em;
     color: white;
@@ -240,7 +244,7 @@ P {
     display: none;
     background: #4A67D9;
 
-    margin: 3rem 0 3rem auto;
+    margin: 2rem auto;
     border-radius: 5px;
     padding: 0.7rem 0.5rem;
     border: 1px solid #5A4AD9;
