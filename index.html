@@ -10,7 +10,7 @@
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/styles/styles.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <script type="importmap">
         {
@@ -24,10 +24,10 @@
 </head>
 
 <body>
-    <section id="realidade-aumentada" class="section--size1">
+    <section id="top" class="section--size1">
         <nav id="navbar" class="navbar">
             <div class="navbar--logo">
-                <a href="#realidade-aumentada"><img src="assets/img/LOG PHI011.svg" alt="Phi Criativo">
+                <a href="#top"><img src="assets/img/LOG PHI011.svg" alt="Phi Criativo">
             </div>
             </a>
             <div class="navbar--links">
@@ -48,7 +48,23 @@
                 </ul>
             </div>
         </nav>
-        <div class="header--initialcontent">
+        <div class="nav--label" id="top"></div>
+        <div class="header--initialcontent--swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/img/bar-do-paulo-360-1.jpg" alt="Imagem 1"></div>
+                    <div class="swiper-slide"><img src="assets/img/bar-do-paulo-360-2.jpg" alt="Imagem 2"></div>
+                    <div class="swiper-slide"><img src="assets/img/bar-do-paulo-360-3.jpg" alt="Imagem 3"></div>
+                    <!-- Adicione mais slides conforme necessário -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- Adicione a seta de navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div id="realidade-aumentada" class="header--initialcontent">
             <div class="header--content header--text">
                 <h1><strong>Soluções Digitais
                         Inovação na ponta dos dedos!</strong></h1>
@@ -190,11 +206,28 @@
         </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.157.0/three.min.js"
         integrity="sha512-nogdM20cZX4FjsqU5H5ecK3vw8LjYN1AcUUWi7asLUVP3eJK5wldywvqFMW8CLd5/xoiJaIL3eXG82SlOWZkTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" type="module"></script>
 
     <script src="./assets/script/script.js" type="module"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                autoplay: {
+                    delay: 7000, // 7 segundos
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
 </body>
 
 </html>

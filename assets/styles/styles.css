@@ -113,6 +113,48 @@ P {
     margin: 0;
 }
 
+.header--initialcontent--swiper {
+
+    max-width: calc(90% - 1px);
+    max-height: 80vh;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 1.5rem auto;
+    overflow: hidden;
+    justify-content: center;
+
+}
+
+.swiper-container {
+    max-width: 98vw;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    transform: translateY(-45vh);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    height: auto;
+}
+
 .header--content {
     position: relative;
     width: calc(50% - 1px);
@@ -230,11 +272,11 @@ P {
     padding: 2rem 0 2rem 0;
 }
 
-.text-360example p{
+.text-360example p {
     margin-top: 1rem;
 }
 
-.contact--links-off{
+.contact--links-off {
     font-size: 1em;
     color: white;
     padding-left: 0.2em;
@@ -315,7 +357,7 @@ P {
     margin: 0.4em 0;
 }
 
-.apoio{
+.apoio {
     background: white;
     margin: 0.5em 0;
     border-radius: 10px;
@@ -346,7 +388,7 @@ P {
         height: 45vh;
     }
 
-    .apoio--header1{
+    .apoio--header1 {
         width: 100%;
         height: fit-content;
         padding-bottom: 0;
@@ -377,7 +419,7 @@ P {
         width: 45%;
     }
 
-    .header--content h1{
+    .header--content h1 {
         padding: 2rem;
     }
 }
