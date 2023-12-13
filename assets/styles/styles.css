@@ -241,10 +241,14 @@ P {
 }
 
 .ra-link {
+    position: absolute;
+    left: 22.5%;
+    z-index: 100;
+
     display: none;
     background: #4A67D9;
 
-    margin: 2rem auto;
+    margin: 2rem 0;
     border-radius: 5px;
     padding: 0.7rem 0.5rem;
     border: 1px solid #5A4AD9;
