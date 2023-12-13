@@ -283,6 +283,9 @@ P {
 }
 
 .ra-link {
+    position: absolute;
+    left: 22.5%;
+
     display: none;
     background: #4A67D9;
 
