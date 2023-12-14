@@ -389,6 +389,10 @@ P {
 
     .header--img {
         margin-top: 4em;
+        height: fit-content;
+    }
+    .section--size1{
+        height: fit-content;
     }
 
     .box--content {
