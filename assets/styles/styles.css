@@ -379,7 +379,7 @@ P {
     .header--img {
         width: calc(100% - 1px);
         margin-top: 1em;
-        height: 50vh;
+        height: 55vh;
     }
 
     .box--content {
