@@ -13,7 +13,6 @@ html {
 }
 
 body {
-
     background: linear-gradient(to right bottom, #333, #7e8792);
     font-size: 16px;
 
@@ -140,6 +139,45 @@ P {
     width: 100%;
 }
 
+.header--img h1{
+    display: none;
+    text-align: center;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.5rem 0.5rem;
+    background: rgba(0, 0, 0, 0.582);
+    border-radius: 10px;
+}
+
+.ra--links{
+    display: none;
+    margin: auto 0;
+    max-width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.links-ra{
+
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+
+    width: 8em;
+    padding: 3.2em 0.5em;
+    margin: 0.25em auto;
+
+    background: rgba(0, 0, 0, 0.582);
+    border-radius: 10px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
 .header--content-360 {
 
     position: relative;
@@ -195,6 +233,13 @@ P {
     color: white;
 }
 
+.header--text h2{
+    font-size: 1.5em;
+    padding: 4rem 0 2rem 0;
+    text-align: center;
+    color: white;
+}
+
 
 .header--text p {
     width: 90%;
@@ -238,26 +283,6 @@ P {
     font-size: 1em;
     color: white;
     padding-left: 0.2em;
-}
-
-.ra-link {
-    position: absolute;
-    left: 22.5%;
-    z-index: 100;
-
-    display: none;
-    background: #4A67D9;
-
-    margin: 2rem 0;
-    border-radius: 5px;
-    padding: 0.7rem 0.5rem;
-    border: 1px solid #5A4AD9;
-    height: fit-content;
-    width: fit-content;
-}
-
-.ra-link a {
-    justify-content: center;
 }
 
 .box1--contact {
@@ -329,10 +354,6 @@ P {
 }
 
 @media (orientation: portrait) {
-    html {
-        overflow: auto;
-    }
-
     body {
         font-size: 14px;
     }
@@ -348,6 +369,18 @@ P {
     .header--content-360 {
         width: 100%;
         height: 45vh;
+    }
+
+    .ra--links{
+        display: flex;
+    }
+
+    .header--img h1{
+        display: block;
+    }
+
+    .header--content{
+        margin-bottom: 2rem;
     }
 
     .apoio--header1{
@@ -369,10 +402,6 @@ P {
         padding: 0 0.5em 2rem 0.5em;
     }
 
-    .ra-link {
-        display: block;
-    }
-
     .content-turn {
         flex-direction: column-reverse;
     }
@@ -383,5 +412,9 @@ P {
 
     .header--content h1{
         padding: 2rem;
+    }
+
+    .text-360example h1{
+        padding: 0.75em 0 0 0;
     }
 }
