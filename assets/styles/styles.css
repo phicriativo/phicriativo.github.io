@@ -365,7 +365,8 @@ P {
     }
 
     .header--content{
-        margin-bottom: 2rem;
+        margin-bottom: 1em;
+        height: fit-content;
     }
 
     .apoio--header1{
@@ -377,7 +378,7 @@ P {
 
     .header--img {
         width: calc(100% - 1px);
-        margin-top: 2em;
+        margin-top: 1em;
         height: 50vh;
     }
 
