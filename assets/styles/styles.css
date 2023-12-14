@@ -119,7 +119,7 @@ P {
     box-sizing: border-box;
     padding: 0 5vw;
     border-radius: 10px;
-    margin: 0 0 0 1px;
+    margin: 0 0 1em 1px;
 }
 
 .header--img {
@@ -135,11 +135,6 @@ P {
     background-size: cover;
 }
 
-.header--img img {
-    width: 100%;
-    margin-top: 2rem;
-}
-
 .header--img h1{
     display: none;
     text-align: center;
@@ -148,7 +143,7 @@ P {
     color: white;
     font-weight: 400;
     font-style: normal;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5em 0;
     background: rgba(0, 0, 0, 0.582);
     border-radius: 10px;
 }
@@ -168,7 +163,7 @@ P {
     align-items: center;
 
     width: 42.5%;
-    padding: 3.2em 0.5em;
+    padding: 17% 2%;
     margin: 0.25em auto;
 
     background: rgba(0, 0, 0, 0.582);
@@ -248,6 +243,7 @@ P {
     text-align: center;
     font-size: 1.5em;
     color: white;
+    padding-bottom: 1em;
 }
 
 .header--text1 h1 {
@@ -368,8 +364,8 @@ P {
     .apoio--header,
     .box--content,
     .header--content-360 {
-        width: 100%;
-        height: 45vh;
+        width: calc(100% - 1px);
+        max-height: 45vh;
     }
 
     .ra--links{
@@ -397,6 +393,14 @@ P {
 
     .box--content {
         padding: 0.5em;
+    }
+
+    .header--text h1{
+        font-size: 2.5em;
+        padding: 6rem 0 2rem 0;
+        margin: 0;
+        text-align: center;
+        color: white;
     }
 
     .header--text1 h1 {
