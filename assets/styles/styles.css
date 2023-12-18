@@ -13,7 +13,6 @@ html {
 }
 
 body {
-
     background: linear-gradient(to right bottom, #333, #7e8792);
     font-size: 16px;
 
@@ -160,9 +159,9 @@ P {
     width: calc(50% - 1px);
     height: calc(90vh - 2px);
     box-sizing: border-box;
-    padding: 0 5vw;
+    padding: 0 4vw;
     border-radius: 10px;
-    margin: 0 0 0 1px;
+    margin: 0 0 1em 1px;
 }
 
 .header--img {
@@ -178,8 +177,43 @@ P {
     background-size: cover;
 }
 
-.header--img img {
-    width: 100%;
+.header--img h1{
+    display: none;
+    text-align: center;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.5em 0;
+    background: rgba(0, 0, 0, 0.582);
+    border-radius: 10px;
+}
+
+.ra--links{
+    display: none;
+    margin: auto 0;
+    max-width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.links-ra{
+
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+
+    width: 42.5%;
+    padding: 17% 2%;
+    margin: 0.25em auto;
+
+    background: rgba(0, 0, 0, 0.582);
+    border-radius: 10px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
 }
 
 .header--content-360 {
@@ -244,6 +278,7 @@ P {
     text-align: center;
     font-size: 1.5em;
     color: white;
+    padding-bottom: 1em;
 }
 
 .header--text1 h1 {
@@ -280,25 +315,6 @@ P {
     font-size: 1em;
     color: white;
     padding-left: 0.2em;
-}
-
-.ra-link {
-    position: absolute;
-    left: 22.5%;
-
-    display: none;
-    background: #4A67D9;
-
-    margin: 2rem auto;
-    border-radius: 5px;
-    padding: 0.7rem 0.5rem;
-    border: 1px solid #5A4AD9;
-    height: fit-content;
-    width: fit-content;
-}
-
-.ra-link a {
-    justify-content: center;
 }
 
 .box1--contact {
@@ -370,25 +386,29 @@ P {
 }
 
 @media (orientation: portrait) {
-    html {
-        overflow: auto;
-    }
-
     body {
         font-size: 14px;
     }
 
-    .only-pc {
-        display: none;
-    }
-
     .header--content,
-    .header--img,
     .apoio--header,
     .box--content,
     .header--content-360 {
-        width: 100%;
-        height: 45vh;
+        width: calc(100% - 1px);
+        max-height: 45vh;
+    }
+
+    .ra--links{
+        display: flex;
+    }
+
+    .header--img h1{
+        display: block;
+    }
+
+    .header--content{
+        margin-bottom: 1em;
+        height: fit-content;
     }
 
     .swiper-container {
@@ -412,19 +432,25 @@ P {
     }
 
     .header--img {
-        margin-top: 4em;
+        width: calc(100% - 1px);
+        margin-top: 1em;
+        height: 55vh;
     }
 
     .box--content {
         padding: 0.5em;
     }
 
-    .header--text1 h1 {
-        padding: 0 0.5em 2rem 0.5em;
+    .header--text h1{
+        font-size: 2.5em;
+        padding: 6rem 0 2rem 0;
+        margin: 0;
+        text-align: center;
+        color: white;
     }
 
-    .ra-link {
-        display: block;
+    .header--text1 h1 {
+        padding: 0 0.5em 2rem 0.5em;
     }
 
     .content-turn {
@@ -437,5 +463,9 @@ P {
 
     .header--content h1 {
         padding: 2rem;
+    }
+
+    .text-360example h1{
+        padding: 0.75em 0 0 0;
     }
 }
