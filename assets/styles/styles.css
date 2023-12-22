@@ -20,18 +20,15 @@ body {
 
 .navbar {
     position: fixed;
-
     width: 100%;
     height: var(--height-nav);
 
     background: #333;
     box-shadow: 1px 0 2px 1px #444;
-    border-radius: 0 0 10px 10px;
 
 }
 
 .navbar a img {
-    /* height: clamp(calc(var(--height-nav)/3), calc(var(--height-nav) - 2* 1em), var(--height-nav)/1.5); */
     height: 2em;
     position: absolute;
     padding: 0.75em 0;
@@ -81,6 +78,7 @@ body {
 
     body {
         font-size: var(--phone-text-size);
+        overflow: hidden;
     }
 
     .navbar a img {
@@ -96,18 +94,6 @@ body {
         overflow-wrap: break-word;
         max-width: 25%;
     }
-
-    @viewport {
-        orientation: portrait;
-    }
-
-}
-
-@viewport {
-    width: device-width;
-    zoom: 1;
-    min-zoom: 0.5;
-    max-zoom: 2;
 }
 
 
