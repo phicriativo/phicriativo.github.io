@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,400&display=swap');
 
 :root {
-    --height-nav: 3.5rem;
+    --height-nav: 3rem;
 
     --pc-text-size: 16px;
     --phone-text-size: 14px;
@@ -22,7 +22,7 @@
 
 html {
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     scroll-behavior: smooth;
     height: 100vh;
 
@@ -122,9 +122,9 @@ nav {
 }
 
 .navbar a img {
-    height: 2rem;
+    height: calc(var(--height-nav)/1.75);
     position: absolute;
-    padding: 0.75rem 0;
+    padding: calc((var(--height-nav) - (var(--height-nav)/1.75))/2) 0;
     margin: 0 10vw;
 }
 
@@ -150,13 +150,12 @@ nav {
 /* ----------------------------SWIPER--------------------------------- */
 
 .swiper {
+    scroll-snap-align: start;
 
     padding-top: calc(var(--height-nav) + .1rem);
     width: 100%;
     overflow: hidden;
     height: 100vh;
-
-    scroll-snap-align: start;
 }
 
 .swiper-wrapper {
@@ -195,10 +194,10 @@ nav {
 /* ----------------------------AUGMENTED REALITY--------------------------------- */
 
 #augmented-reality {
+    scroll-snap-align: start;
+
     height: 100vh;
     width: 100%;
-
-    scroll-snap-align: start;
 
 }
 

@@ -93,6 +93,8 @@
                     onlyInViewport: false,
                 },
             })
+
+
             var thumbsSlider = new Swiper('.swiper-container-thumbs', {
                 spaceBetween: 10,
                 slidesPerView: 3,
@@ -107,6 +109,8 @@
             thumbsSlider.on('click', function () {
                 mainSlider.slideTo(thumbsSlider.clickedIndex);
             });
+            
+        });
     </script>
 
 //     <!-- 
