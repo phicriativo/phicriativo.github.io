@@ -10,7 +10,7 @@
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/styles/styles.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- <script type="importmap">
         {
@@ -25,10 +25,10 @@
 
 <body>
     <nav class="navbar">
-        <a href="#"><img src="assets/img/Logo Phi.svg" alt="Phi Criativo"></a>
+        <a href="#top"><img src="assets/img/Logo Phi.svg" alt="Phi Criativo"></a>
         <div class="navbar--links">
             <ul>
-                <li class="navbar--item"><a class="navbar--links" href="#">Realidade Aumentada</a></li>
+                <li class="navbar--item"><a class="navbar--links" href="#augmented-reality">Realidade Aumentada</a></li>
                 <li class="navbar--item"><a class="navbar--links" href="#">360</a></li>
                 <li class="navbar--item"><a class="navbar--links" href="#">Sobre</a></li>
                 <li class="navbar--item"><a class="navbar--links" href="#">Contato</a></li>
@@ -36,25 +36,29 @@
         </div>
     </nav>
 
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/img/bar-do-paulo-360-1.jpg" alt="Imagem 1"></div>
-                <div class="swiper-slide"><img src="assets/img/bar-do-paulo-360-2.jpg" alt="Imagem 2"></div>
-                <div class="swiper-slide"><img src="assets/img/bar-do-paulo-360-3.jpg" alt="Imagem 3"></div>
-                <!-- Adicione mais slides conforme necessário -->
-            </div>
-            <div class="swiper-pagination"></div>
-            <!-- Adicione a seta de navegação -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+    <div id="top" class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/img/bar-do-paulo-360-1.jpg" alt="Imagem 1"></div>
+            <div class="swiper-slide"><img src="assets/img/bar-do-paulo-360-2.jpg" alt="Imagem 2"></div>
+            <div class="swiper-slide"><img src="assets/img/bar-do-paulo-360-3.jpg" alt="Imagem 3"></div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <section id="augmented-reality">
+        <div class="header-ar"></div>
+        <div class="links-ar"></div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var swiper = new Swiper('.swiper', {
                 loop: true,
+                effect: 'fade',
+
                 autoplay: {
                     delay: 7000, // 7 segundos
                 },
@@ -65,7 +69,15 @@
                 scrollbar: {
                     el: '.swiper-scrollbar',
                 },
-            });
+
+                fadeEffect: {
+                    crossFade: true,
+                },
+                keyboard: {
+                    enabled: true,
+                    onlyInViewport: false,
+                },
+            })
         });
     </script>
 
@@ -93,6 +105,8 @@
                 </ul>
             </div>
         </nav>
+
+
         <div class="header--initialcontent">
             <div class="header--content header--text">
                 <h1><strong>Soluções Digitais
