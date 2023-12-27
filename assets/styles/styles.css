@@ -28,6 +28,8 @@ body {
     background: linear-gradient(to right bottom, #333, #7e8792);
 }
 
+/* ----------------------------NAVBAR--------------------------------- */
+
 nav {
     z-index: 1000;
 }
@@ -68,16 +70,19 @@ nav {
     text-wrap: wrap;
 }
 
+/* ----------------------------SWIPER--------------------------------- */
+
 .swiper-container {
+    padding-top: calc(var(--height-nav) + .1rem);
     max-width: 100%;
-    height: 100%;
+}
+
+.swiper-wrapper{
+    display: flex;
 }
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -94,7 +99,7 @@ nav {
 
 .swiper-slide img {
     max-width: 100%;
-    height: auto;
+ 
 }
 
 @media only screen and (min-width: 1024px) {
@@ -133,12 +138,6 @@ nav {
     .navbar--links ul li {
         overflow-wrap: break-word;
         max-width: 25%;
-    }
-
-    .slider-wrapper {
-        margin-top: calc(var(--height-nav) + .5rem);
-        max-width: 100%;
-        height: fit-content;
     }
 }
 
