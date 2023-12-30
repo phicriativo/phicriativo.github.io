@@ -155,7 +155,7 @@ nav {
     padding-top: calc(var(--height-nav) + .1rem);
     width: 100%;
     overflow: hidden;
-    height: 100vh;
+    height: 100dvh;
 }
 
 .swiper-wrapper {
@@ -168,28 +168,47 @@ nav {
     align-items: center;
 }
 
-/* .swiper-button-next,
-.swiper-button-prev {
-    display: none;
-} */
-
 .swiper-slide img {
     width: 100%;
     height: 100%;
 }
 
-.swiper-container-thumbs {
-    width: 80%;
-    margin: 1px auto;
-  }
+/* ----------------------------SLIDE 1--------------------------------- */
 
-  .swiper-slide-thumb {
-    width: 5rem;
-    height: 7rem;
-    border-radius: 5px;
-    background-size: cover;
-    background-position: center;
-  }
+.swiper-slide:has(>.content-slide1) {
+    display: flex;
+    box-sizing: border-box;
+    
+}
+
+.content-slide1 {
+
+    border: white 1px solid;
+    width: calc(50% - 3rem);
+    height: calc(100% - var(--height-nav));
+    border-radius: .5rem;
+    margin-top: var(--height-nav);
+    box-sizing: border-box;
+    padding: calc(30dvh - var(--height-nav)) .75rem 0 .75rem;
+}
+
+.content-slide1 h1{
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+
+    color: white;
+}
+
+.content-slide1 p{
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    padding: 1.5rem .75rem 0 .75rem;
+
+    color: white;
+}
+
 
 /* ----------------------------AUGMENTED REALITY--------------------------------- */
 

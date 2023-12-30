@@ -38,24 +38,25 @@
 
     <div id="top" class="swiper">
         <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="content-slide1">
+                    <h1>Soluções Digitais e
+                        Inovação na ponta dos dedos!</h1>
+                    <p>Conheça o Phi Criativo, a Plataforma que
+                        possibilita imersão digital e interação em seus
+                        produtos e serviços.
+                    </p>
+                </div>
+                <div class="content-slide1">
+
+                </div>
+            </div>
             <div class="swiper-slide"><img src="assets/img/bar-do-paulo-360-1.jpg" alt="Imagem 1"></div>
             <div class="swiper-slide"><img src="assets/img/bar-do-paulo-360-2.jpg" alt="Imagem 2"></div>
             <div class="swiper-slide"><img src="assets/img/bar-do-paulo-360-3.jpg" alt="Imagem 3"></div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-    </div>
-
-    <div class="swiper-container swiper-container-thumbs">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide-thumb" data-thumb-index="0"
-                style="background-image:url('assets/img/bar-do-paulo-360-1.jpg')"></div>
-            <div class="swiper-slide-thumb" data-thumb-index="1"
-                style="background-image:url('assets/img/bar-do-paulo-360-2.jpg')"></div>
-            <div class="swiper-slide-thumb" data-thumb-index="2"
-                style="background-image:url('assets/img/bar-do-paulo-360-3.jpg')"></div>
-            <!-- Add more thumbnails as needed -->
-        </div>
     </div>
 
     <section id="augmented-reality">
@@ -74,15 +75,12 @@
                 loop: true,
                 effect: 'fade',
 
-                autoplay: {
-                    delay: 7000, // 7 segundos
-                },
+                // autoplay: {
+                //     delay: 10000,
+                // },
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
-                },
-                scrollbar: {
-                    el: '.swiper-scrollbar',
                 },
 
                 fadeEffect: {
@@ -93,27 +91,10 @@
                     onlyInViewport: false,
                 },
             })
-
-
-            var thumbsSlider = new Swiper('.swiper-container-thumbs', {
-                spaceBetween: 10,
-                slidesPerView: 3,
-                freeMode: true,
-                watchSlidesVisibility: true,
-                watchSlidesProgress: true,
-            });
-
-            mainSlider.controller.control = thumbsSlider;
-            thumbsSlider.controller.control = mainSlider;
-
-            thumbsSlider.on('click', function () {
-                mainSlider.slideTo(thumbsSlider.clickedIndex);
-            });
-            
         });
     </script>
 
-//     <!-- 
+    // <!-- 
 //         <div class="header--initialcontent">
 //             <div class="header--content header--text">
 //                 <h1><strong>Soluções Digitais
