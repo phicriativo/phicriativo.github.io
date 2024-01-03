@@ -155,7 +155,7 @@ nav {
     padding-top: calc(var(--height-nav) + .1rem);
     width: 100%;
     overflow: hidden;
-    height: 100dvh;
+    height: calc(100dvh - var(--height-nav));
 }
 
 .swiper-wrapper {
@@ -179,28 +179,33 @@ nav {
     display: flex;
     box-sizing: border-box;
 
+    background: center / cover no-repeat url(../img/phi-img-01-inv.png), no-repeat center radial-gradient(#6b02b0 0, #6b02b0 15%, #33333300 65%, #33333300 100%);
+    background-size: 43rem;
+
 }
 
 .content-slide1 {
+    position: relative;
 
     width: calc(50% - 3rem);
     height: calc(100% - var(--height-nav));
     border-radius: .5rem;
     margin-top: var(--height-nav);
     box-sizing: border-box;
-    padding: calc(23dvh - var(--height-nav)) .75rem 0 .75rem;
-    background: no-repeat radial-gradient(#6b02b0 0%, #6b02b0 33%, #33333300 70%, #33333300 100%);
+    padding: calc(20dvh - var(--height-nav)) 0 0 0;
 }
 
-.images-slide1{
-    padding: 1.75rem 5rem 0 5rem;
+.images-slide1 {
+    padding: 5% 0 0 0;
+    height: 20%;
     display: flex;
     justify-content: space-around;
+    display: none;
 }
 
-.content-slide1 img{
-    height: 5rem;
+.content-slide1 img {
     background: transparent;
+    padding: 0 1.5rem;
 }
 
 .content-slide1 h1 {
@@ -218,7 +223,7 @@ nav {
     font-size: 1.5rem;
     font-weight: 400;
 
-    padding: 1.5rem .75rem 0 .75rem;
+    padding: 2rem;
 
     color: white;
     text-shadow: 2px 2px black;
@@ -226,14 +231,46 @@ nav {
 
 .content2-slide1 {
 
-    border: white 1px solid;
     width: calc(50% - 3rem);
-    height: calc(100% - var(--height-nav));
     border-radius: .5rem;
-    margin-top: var(--height-nav);
-    box-sizing: border-box;
-    padding: calc(30dvh - var(--height-nav)) .75rem 0 .75rem;
-    background: center / contain no-repeat url(../img/phi-lion.png);
+    margin-top: 10rem;
+    align-items: center;
+    display: grid;
+    grid-template:
+        "card1 card2"
+        "card3 card4";
+        gap: 1rem;
+}
+
+.content2-slide1 a {
+    text-decoration: none;
+}
+
+.cards-slide1-2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.cards-slide1-2::before {
+    content: "";
+    background: #6a02b0b7;
+    border-radius: 1rem;
+    width: 13rem;
+    height: 4.5rem;
+    position: absolute;
+    z-index: -1;
+    transform: translateX(2.5rem);
+}
+
+.cards-slide1-2 img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.cards-slide1-2 span {
+    color: white;
+    flex-grow: 1;
 }
 
 
@@ -244,6 +281,8 @@ nav {
 
     height: 100vh;
     width: 100%;
+
+    background: white;
 
 }
 
@@ -266,10 +305,29 @@ nav {
         margin: 0 5vw;
     }
 
+    .images-slide1 {
+        display: flex;
+    }
+
+    /* ----------------------------SWIPER TABLETS--------------------------------- */
+
+    .swiper {
+        width: 100%;
+        height: calc(100dvh - var(--height-nav)) ;
+    }
+
     /* ----------------------------SLIDE 1 TABLETS--------------------------------- */
 
     .content-slide1 {
         padding: calc(20dvh - var(--height-nav)) .25rem 0 .25rem;
+        width: calc(100% - 3rem);
+        height: calc(100dvh - var(--height-nav));
+        margin-top: var(--height-nav);
+        box-sizing: border-box;
+    }
+
+    .content2-slide1 {
+        display: none;
     }
 }
 
@@ -290,7 +348,6 @@ nav {
     .navbar--links ul {
         gap: 1rem;
         padding: 0 0.75em 0 4.5em;
-
     }
 
     .navbar--links ul li {
@@ -301,28 +358,47 @@ nav {
     /* ----------------------------SWIPER MOIBILE--------------------------------- */
 
     .swiper {
-    
-        width: 100%;
-        height: 50dvh;
+        width: 100lvw;
+        height: 100lvw;
     }
 
-/* ----------------------------SLIDE 1 MOBILE--------------------------------- */
+    /* ----------------------------SLIDE 1 MOBILE--------------------------------- */
 
     .swiper-slide:has(>.content-slide1) {
         flex-direction: column;
-
+        background-size: 25rem;
     }
 
     .content-slide1 {
-
         width: calc(100% - 3rem);
-        height: calc(50dvh - var(--height-nav));
         margin-top: var(--height-nav);
         box-sizing: border-box;
         padding: 0.5rem .75rem 0 .75rem;
     }
 
-    .content2-slide1{
+    .content-slide1 h1 {
+        font-size: 2.25rem;
+        padding-top: 1rem;
+    }
+
+    .content-slide1 p {
+        font-size: 1.25rem;
+        padding: 1rem 0.25rem 0 0.25rem;
+    }
+
+    .images-slide1 {
+        padding-top: 3rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .content-slide1 img {
+        height: 4rem;
+        width: 4rem;
+        padding: 0;
+    }
+
+    .content2-slide1 {
         display: none;
     }
 }
