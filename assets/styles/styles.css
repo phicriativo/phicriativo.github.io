@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,400&display=swap');
 
+*{
+    --nav-height: 10vh;
+}
+
 
 html {
     overflow-y: scroll;
@@ -57,7 +61,7 @@ P {
 .navbar {
     z-index: 1000;
     width: 100%;
-    height: 10vh;
+    height: var(--nav-height);
     margin: 0;
     padding: 0 3rem 0 5rem;
     border-radius: 0 0 10px 10px;
@@ -108,7 +112,7 @@ P {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: calc(10vh + 1px) 0 2px 0;
+    padding: calc(var(--nav-height) + 1px) 0 2px 0;
     margin: 0;
 }
 
@@ -172,6 +176,54 @@ P {
     color: white;
     text-decoration: none;
     font-size: 1.5em;
+}
+
+#evento-arar{
+    display: flex;
+    justify-content: center;
+    padding-inline: 2rem;
+    gap: 2rem;
+
+    /* box-sizing: border-box; */
+
+    background: linear-gradient(to left, white, white, transparent);
+
+}
+
+.arar{
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    width: 90%;
+}
+
+.h1-arar{
+    font-size: 32px;
+    padding: 2rem;
+}
+
+.h2-arar{
+    font-size: 22px;
+}
+
+.p-arar{
+    font-size: 16px;
+    padding: 2rem;
+}
+
+.arar-img{
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.img-arar{
+    max-height: 50vh;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .header--content-360 {
