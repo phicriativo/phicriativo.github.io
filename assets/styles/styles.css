@@ -135,7 +135,7 @@ P {
     border-radius: 10px;
     margin: 0 0 0 1px;
     overflow: hidden;
-    background: no-repeat center url('../img/phi-lion.png');
+    background: no-repeat center url('../img/phi-img-01.png');
     background-size: cover;
 }
 
@@ -181,12 +181,10 @@ P {
 #evento-arar{
     display: flex;
     justify-content: center;
-    padding-inline: 2rem;
+    padding-inline: 4rem;
     gap: 2rem;
 
-    /* box-sizing: border-box; */
-
-    background: linear-gradient(to left, white, white, transparent);
+    background: linear-gradient(to left, white 0%, white 35%, transparent 95%);
 
 }
 
@@ -198,32 +196,49 @@ P {
     box-sizing: border-box;
     border-radius: 10px;
 
-    width: 90%;
 }
 
 .h1-arar{
     font-size: 32px;
-    padding: 2rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
 }
 
 .h2-arar{
     font-size: 22px;
+    font-weight: 400;
+    font-style: bold;
 }
 
 .p-arar{
-    font-size: 16px;
-    padding: 2rem;
+    font-size: 18px;
+    padding: 1.25rem 1.5rem;
+    text-wrap: balance;
 }
 
-.arar-img{
-    box-sizing: border-box;
+.link-arar{
+    font-weight: 400;
+    font-style: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.arar-imgs{
+    display: grid;
     border-radius: 10px;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+
 }
 
 .img-arar{
-    max-height: 50vh;
-    box-sizing: border-box;
+    max-height: 40vh;
     border-radius: 10px;
+
+    align-items: center;
+
 }
 
 .header--content-360 {
@@ -464,5 +479,11 @@ P {
 
     .text-360example h1{
         padding: 0.75em 0 0 0;
+    }
+
+    #evento-arar{
+        flex-direction: column-reverse;
+        background: linear-gradient(to bottom, white 0%, white 40%, transparent 95%);
+        margin-inline: 0.5rem;
     }
 }
