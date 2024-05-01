@@ -1,0 +1,125 @@
+*{
+    --cor-principal: #d3c1de;
+    --cor-secundaria: #805aa6;
+
+    --nav-height: 10vh;
+}
+
+html{
+    background: var(--cor-principal);
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav--label {
+    height: calc(10vh - 2px);
+    box-sizing: border-box;
+    margin: 0 0 1px 0px;
+}
+
+.navbar {
+    z-index: 1000;
+    width: 100%;
+    height: var(--nav-height);
+    margin: 0;
+    padding: 0 3rem 0 5rem;
+    border-radius: 0 0 10px 10px;
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    box-shadow: 1px 0 2px 1px #444;
+
+
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+
+}
+
+.navbar--logo {
+    position: absolute;
+    right: 82.5%;
+
+}
+
+.navbar--logo img {
+    max-width: 90px;
+}
+
+.navbar--links {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.nav--links {
+    display: flex;
+}
+
+.navbar--item {
+    padding: 0 0.75em;
+}
+
+.pg-arar{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    padding: 1rem;
+    gap: 1rem;
+
+
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+
+
+    overflow: hidden;
+    
+}
+
+.arar-logo-phi{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.arar-logo-phi{
+    width: 75%;
+}
+
+.arar-logo-arar{
+    width: 80%;
+}
+
+.arar-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    padding-block: 2rem;
+    gap: 2rem;
+}
+
+.arar-intro-text{
+    text-align: end;
+    padding-inline: 5rem;
+    padding-bottom: 2rem
+}
+
+.arar-txt{
+    text-align: justify;
+    text-wrap: pretty;
+    padding-inline: 5rem;
+}
+
+
+@media (orientation: portrait) {
+    .nav-div {
+        width: 45%;
+    }
+}
