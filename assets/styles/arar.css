@@ -143,6 +143,29 @@ h3{
     padding-inline: 5rem;
 }
 
+.arar-qrlink{
+    padding: 2rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.arar-qrcode{
+    width: 25%;
+}
+
+.arar-qrlink-phone{
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background: var(--cor-secundaria);
+    padding: .5rem;
+    border-radius: 30px;
+    height: fit-content;
+
+    display: none;
+}
+
 footer{
     padding: .5rem;
     background: var(--cor-secundaria);
@@ -153,7 +176,7 @@ footer{
 
 .arar-footer1{
     padding-bottom: .5rem;
-    width: 50%;
+    width: 60%;
 }
 
 @media (orientation: portrait) {
@@ -171,5 +194,14 @@ footer{
 
     .arar-txt{
         padding-inline: 1rem;
+    }
+
+    .arar-qrlink{
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+
+    .arar-qrlink-phone{
+        display: block;
     }
 }
