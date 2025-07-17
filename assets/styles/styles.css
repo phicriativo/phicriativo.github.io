@@ -98,10 +98,19 @@ P {
 
 .nav--links {
     display: flex;
+    align-items: center;
+    text-align: end;
 }
 
 .navbar--item {
     padding: 0 0.75em;
+}
+
+.navbar--evento {
+    padding: 0.25rem 1rem;
+    background-color: #fc924d ;
+    border-radius: 2rem;
+    text-align: center;
 }
 
 .header--initialcontent {
