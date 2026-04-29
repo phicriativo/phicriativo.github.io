@@ -1,0 +1,13 @@
+# Vite / build
+dist/
+node_modules/
+
+# Env
+.env
+.env.local
+
+# Misc
+.DS_Store
+*.pem
+npm-debug.log*
+
